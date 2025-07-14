@@ -1,0 +1,123 @@
+
+:root {
+    --vert: #8FBF8F;
+    --beige: #F5F3EA;
+    --blanc: #FFFFFF;
+    --gris: #444;
+    --ombre: rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--beige);
+    color: var(--gris);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--vert);
+    padding: 1em;
+    text-align: center;
+    color: var(--blanc);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5em;
+}
+
+nav ul li a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 3em 1em;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
+    color: var(--blanc);
+}
+
+.hero .btn {
+    display: inline-block;
+    background: var(--vert);
+    color: var(--blanc);
+    padding: 0.7em 1.5em;
+    margin-top: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.hero .btn:hover {
+    background: #6ea06e;
+}
+
+section {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--vert);
+    margin-bottom: 0.5em;
+}
+
+blockquote {
+    background: var(--blanc);
+    padding: 1em;
+    margin: 1em 0;
+    border-left: 5px solid var(--vert);
+    box-shadow: 0 2px 5px var(--ombre);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: var(--vert);
+    color: var(--blanc);
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+form button:hover {
+    background: #6ea06e;
+}
+
+footer {
+    background: var(--vert);
+    color: var(--blanc);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
